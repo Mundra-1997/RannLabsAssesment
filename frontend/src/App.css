@@ -1,0 +1,360 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: slateblue;
+}
+
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.container .registration{
+  display: none;
+}
+
+.logo{
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+}
+header{
+  color: white;
+  background-color: black;
+}
+label{
+  color: black;
+  font-size: 18px;
+}
+.login, .signup{
+  cursor: pointer;
+  color: white;
+  padding-left: 10px;
+}
+
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 60px;
+   width: 600px;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+
+
+.form input.button{
+  color: #fff;
+  background: slateblue;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: grey;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: slateblue;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  align-items: center;
+  padding: 4px;
+  height: 60px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: black;
+  color: slateblue;
+}
+
+.search {
+  width: 25%;
+  min-width: 200px;
+  margin: 2px;
+  border: none;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: rgb(120, 177, 234);
+  font-size: 14px;
+}
+
+.searchbar {
+  padding: 2px 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 42px;
+  border-radius: 8px 0 0 8px;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+.links{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a{
+  text-decoration: none;
+  color: slateblue;
+}
+
+
+.book_container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #15f8ed;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #15f8ed;
+}
+.upload, .logout{
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Cards */
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  height: 100%;
+  width: auto;
+}
+
+.main-container {
+  width: 270px;
+  height: 350px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.poster-container {
+  width: 230px;
+
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 99;
+  margin: 15px 0;
+}
+
+.poster {
+  width: 100%;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.giphy-container {
+  background: #fff;
+  width: 270px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  /* margin: -15px 0; */
+}
+
+.main-container:hover .giphy-container {
+  opacity: 1;
+  animation: bounceIn 0.6s linear;
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.01, 1.01, 1.01);
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.giphy_content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.giphy_title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.giphy_slogan {
+  font-size: 0.9rem;
+
+  padding: 0 10px;
+
+  margin-bottom: 20px;
+}
+
+.add_btn{
+	margin-bottom: 8px;
+}
+
+.card_wrapper {
+  display: flex;
+  height: auto;
+  /* padding-bottom: 20px; */
+  /* margin-bottom: 20px; */
+  margin: 0 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.book_container{
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+}
+
+.book_container label{
+  display: flex;
+  justify-content: start;
+
+}
+
+.book_container label input{
+  width: 100%;
+}
+
+.butn{
+  padding: 4px  20px;
+ font-size: 17px;
+}
