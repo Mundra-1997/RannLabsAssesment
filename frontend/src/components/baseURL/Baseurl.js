@@ -1,3 +1,3 @@
-export const baseURL = 'https://rannlabsassesment.onrender.com
+export const baseURL = 'https://rannlabsassesment.onrender.com'
 
 '
